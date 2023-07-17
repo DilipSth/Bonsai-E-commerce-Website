@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta information about the page -->
+    <meta name="description" content="blog html">
+    <meta name="keyword" content="semantic">
+    <meta name="author" content="Animesh">
+    <meta http-equiv="refresh" content="">
+<!-- Title of the page -->
+<title>How Technology Has Affected Daily Life and Business</title>
+<!-- Styles for the page -->
+<style>
+     /* body styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        content-visibility: 100%;
+       background-color: rgb(232, 229, 229);;
+
+   }
+    /* Headings styling */
+    h1, h2, h3 {
+        color: #4d4d4d;
+    }
+     /* Paragraph styling */
+    p {
+        color: #333333
+    }
+    .hello {
+        color: #333333; 
+    }
+    
+    .blog-post {
+        margin-bottom: 40px;
+    }
+    /* Second level headings styling */
+    .blog-post h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    /* logo styling */
+    .logo{
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+     /* First level headings styling */
+    .banner h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .content {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #f2eded;
+        padding: 10px;
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    }
+    /* container styling */
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .page1{
+    margin-top: 70px;
+    height: 760px;
+}
+ /* navigation bar styling */
+    .nav0{
+        position: relative;
+        bottom: 70px;
+    }
+    /* navigation bar are displayed as flex */
+    nav {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        box-shadow: rgb(0, 0, 0, 0.1);
+        z-index: 6;
+    }
+
+    /*navigation list styling  */
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 40px 60px;
+        position: relative;
+        top: auto;
+        padding-top: 10px;
+        right: 200px;
+        z-index: 3;
+    }
+
+    /* Logo size are defined */
+    .logo1{
+        width: 80px;
+        position: relative;
+        right: 200px;
+        bottom: 5px;
+    }
+
+    nav ul li a {
+        color: rgb(85, 75, 75);
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.1s;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /* making green color when we hover */
+    .hover:hover {
+        color: #48f539;
+    }
+    .hover{
+        font-style: normal;
+    }
+    .cart{
+        height: 40px;
+    }
+    .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    
+    margin: 0 auto;
+    }
+    .backtotop{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(223, 228, 213);
+    color: rgba(67, 89, 18, 1);
+    border-left: solid ;
+    border-right: solid;
+    border-color: black;
+    }
+    a:link { 
+    text-decoration: none; 
+    }
+    .symbol{
+        width: 40px;
+        margin: 20px auto 0;
+        border-radius: 20px;
+    }
+
+
+
+    .contactinfo h2{
+        padding: 15px;
+        background: #c7ddb5;
+        color: black;
+        font-size: 18px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        transition: .4s ease;
+        
+    }
+
+    .contactinfo h2:hover{
+        background-color: #4b6043;
+    }
+    .contactinfo .box{
+        padding: 100px;
+        box-sizing: border-box;
+        float: left;
+    width: 25%;
+    
+
+    }
+
+    .footer{
+        margin-bottom: 15px;
+        padding: 100px 15%;
+        background: rgb(223, 228, 213);
+        color: rgba(67, 89, 18, 1);
+        display: flex;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .col-1 a{
+        display: block;
+        color: black;
+    }
+
+    .col-2{
+        flex-grow: 2;  
+
+    }
+
+</style>
+</head>
+<body>
+    <!-- Navigation bar code -->
+    <header class="page1">
+        <div class="nav0">
+        <nav>
+                <img src="../Images/logo.png" class="logo1">
+                
+            <div>
+                <ul>
+                    <li><a href="../index.html" class="hover">Home</a></li>
+                    <li><a href="product.html" class="hover">Products</a></li>
+                    <li><a href="#" class="hover">Blog</a></li>
+                    <li><a href="research.html" class="hover">Research</a></li>
+                    <li><a href="aboutus.html" class="hover">About us</a></li>
+                    <li><a href="f form.html"><img src="../Images/cart.png" class="cart"></a></li>  
+                </ul>
+                
+              </div>                  
+        </nav>
+        </div>
+      <!-- Main content section -->   
+    <div class="content">
+        <div class="img-container">
+            <img src="../Images/Impact of Technology.jpg" style="height: 350px; width: 900px;" alt="Technology">
+          </div>
+        <h1>How Technology Has Affected Daily Life and Business</h1>
+        <p>
+            Technology has become an integral part of our daily lives. It has revolutionized the way we live, work, and play. In this blog post, we will explore how technology has affected daily life and business.
+        </p>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Technology</h2>
+            <p>
+                Over the past two to three decades, technology has become a bigger and bigger part of our daily lives to the point where it now controls our lives. Take a break from reading this material and explore the area. What do you believe you have observed? Do you notice any electronics, devices, computers, or security cameras?<br><br>
+                Pay attention to how technology and technologies influence our daily lives. Instances of how technology has altered every aspect of our lives, some for the better and some for the worse, include the computer at your desk, the smartphone next to your bed, your WiFi network, and even your thermostat.
+            </p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Productivity</h2>
+            <p>
+                Technology has also had an impact on productivity. With the help of technology, tasks that used to take a long time can now be completed in a fraction of the time. This has allowed businesses to become more efficient and productive.
+            </p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Education</h2>
+            <p>
+                Technology has also changed the way we learn. We can now access information from any part of the world with just a few clicks. Technology has also made it easier for students to collaborate and learn from each other.
+            </p>
+        </div>
+        <div class="blog-post">
+            <h2>Entertainment</h2>
+            <p>
+                Technology has also changed the way we entertain ourselves. We can now watch movies, play video games, and access a plethora of other forms of entertainment from the comfort of our own homes.
+            </p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>How technology has affected in selling bonsai plants online</h2>
+            <p>Technology has had a major impact on selling bonsai plants online. It has allowed online sellers to reach a much wider audience than they could have before. For example, online sellers can now use social media to showcase their products, and online marketplaces like Amazon and eBay provide an easy way to list and sell products at scale. Additionally, technology has allowed online sellers to create easier payment options, provide better customer service, and more efficiently manage inventory and logistics. Overall, technology has made it easier for online bonsai sellers to reach more customers and increase sales.</p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+             <h2>Postive Impact Of Technology in Our Life</h2>
+             <br>
+              
+              <div class="img-container">
+  
+                  <img style="height: 400px; width: 1000px;" src="../Images/positive impact.jpg"alt="">
+              </div>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Improved Communications:</h2>
+            <p>
+                People need communication because it enables them to interact with one another.
+                   Travel that could take days or months was often involved in communication in the past. This was significantly simplified 
+                   by the development of the telegraph and, later, the telephone by Graham Bell. The telephone allowed people to communicate 
+                   across great distances. <br> <br>
+                   In the present, social media and current information technologies enable people to communicate in many ways with people 
+                   all across the world. Using broadband internet, you may text or even contact each other to speak, which lessens the feeling 
+                   of being apart. Thanks to this new technology, people may interact from anywhere in the world and even maintain long-distance 
+                   relationships with their partners. Conference calls enable communication between branches of multinational organizations. 
+                   Consequently, long trips are no longer necessary. <br> 
+            </p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Improved Information Access:</h2>
+            <p>
+                In the past, if you wanted comprehensive knowledge about something, you had to 
+                visit your local library and comb through a number of volumes until you found what you needed. This can be done online with 
+                only a few clicks. Other information-focused websites, like Wikipedia, offer comprehensive information on any topic. 
+                This has contributed to the advancement of learning and education, along with websites like Google and YouTube. 
+                Online learning eliminates the need for textbooks by enabling users to learn any skill without ever leaving their computers. <br> <br> 
+                The internet has made it much simpler to access information such as phone numbers and map instructions. 
+                Physical maps and yellow pages are largely no longer necessary because you can find this information online. 
+                Along with GPS, which makes it much simpler to pinpoint locations, the internet also provides more accurate and up-to-date information.
+            </p>
+        </div>
+        <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Negative Impact Of Technology in Our Life</h2>
+            <br>
+             
+             <div class="img-container">
+ 
+                 <img style="height: 400px; width: 1000px;" src="../Images/negative impact.jpg"alt="">
+             </div>
+       </div>
+       <!-- Blog post section -->
+       <div class="blog-post">
+        <h2>Privacy Concerns:</h2>
+        <p>
+            Users of the Internet have benefited from many conveniences, but they are also considerably more 
+            vulnerable as a result of it. Since everything is done online, a large portion of our data is public or held by businesses looking 
+            to make money off of it. If someone unintentionally gets this information, hackers and con artists might target them. For instance, 
+            someone might use our credit card information to purchase a device that would incur a huge debt. Many individuals are now concerned 
+            about our privacy and are asking tech companies how many people are using our data. Although there are many technologies out there 
+            that can help us protect against this, hackers continue to come up with new ways to access our data. <br> 
+        </p>
+    </div>
+    <!-- Blog post section -->
+    <div class="blog-post">
+        <h2>Increased Pollution:</h2>
+        <p>
+            More people have indicated interest in using each new technological advancement, increasing demand. 
+            Manufacturers and miners now have additional jobs thanks to increased demand. This has led to an increase in the amount of greenhouse gases, 
+            toxic chemicals, and waste released into the environment. Cities have gotten dirtier as a result, which causes chronic illnesses and 
+            congenital disabilities in children. Additionally, this has led to global warming, which has attracted the attention of environmental 
+            specialists who have repeatedly warned the world of its hazards.  
+        </p>
+    </div>
+    <!-- Blog post section -->
+        <div class="blog-post">
+            <h2>Conclusion</h2>
+            <p>
+                Technology has had a profound impact on our daily lives and businesses. It has changed the way we communicate, learn, and entertain ourselves. It has also made businesses more efficient and productive.
+            </p>
+        </div>
+    </div>
+    <br>
+    <a href="#"><div class="backtotop">
+        Back to Top</div></a><hr>
+    <!-- this is the footer section.-->
+			<body>
+				<div class="footer">
+					<div class="col-1">
+						<h3>USEFUL LINKS</h3>
+						<a href="../index.html">Home</a><br>
+						<a href="product.html">Product</a><br>
+						<a href="blog.html">Blog</a><br>
+						<a href="research.html">Research</a><br>
+						<a href="aboutus.html">About us</a><br>
+						<a href="ContactUs.html">Contact Us</a>
+					</div>
+                    <!-- Footer section with contact information -->
+					<div class="col-2">
+						<h3>FIND US</h3>
+						<p>Kathmandu 44600,<br>Kamal Marg,<br>Nepal</p>
+
+					</div>
+
+					<div class="col-3">
+						<h3>FOR MORE INFO</h3>
+						<img src="../Images/facebook.png" class="symbol">
+						<img src="../Images/insta.jpg" class="symbol">
+						<img src="../Images/snap.jpg" class="symbol">
+						<img src="../Images/twitter.png" class="symbol">
+						<img src="../Images/whatsapp.png" class="symbol">
+					</div>
+				</div>
+</body>
+</html>

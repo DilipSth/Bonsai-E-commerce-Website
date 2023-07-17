@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metatag for description of the page -->
+    <meta name="description" content="About us">
+	<!-- Metatag for keywords related to the page -->
+	<meta name="keyword" content="semantic">
+	<!-- Metatag for author of the page -->
+	<meta name="author" content="sajiya">
+	<!-- Metatag for refreshing the page -->
+	<meta http-equiv="refresh" content="">
+    <!-- Title of the page -->
+    <title>About us </title>
+    
+<!-- Styles for the page -->
+<style>
+	/* Setting default margin and padding for all elements */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* Setting the background color for body */
+	body{
+		background-color: rgb(251, 243, 243);
+	}
+
+	/* Setting styles for class page1 */
+	.page1{
+		margin-top: 70px;
+		height: 760px;
+	}
+
+	/* Setting styles for class nav0 */
+	.nav0{
+		position: relative;
+		bottom: 70px;
+	}
+
+	/* Setting styles for navigation bar */
+	nav {
+		display: flex;
+		position: fixed;
+		align-items: center;
+		justify-content: space-around;
+		padding-top: 10px;
+		padding-left: 10%;
+		padding-right: 10%;
+		width: 100%;
+		height: 60px;
+		background-color: white;
+		box-shadow: rgb(0, 0, 0, 0.1);
+		z-index: 6;
+	}
+
+	/* Setting styles for list items in navigation bar */
+	nav ul li {
+		list-style-type: none;
+		display: inline-block;
+		padding: 40px 60px;
+		position: relative;
+		top: auto;
+		padding-top: 10px;
+		right: 200px;
+		z-index: 3;
+	}
+
+	/* Setting styles for logo */
+	.logo1{
+		width: 84px;
+		position: relative;
+		right: 200px;
+		bottom: 5px;
+	}
+
+	/* Setting styles for links in navigation bar */
+	nav ul li a {
+		color: rgb(85, 75, 75);
+		text-decoration: none;
+		font-weight: bold;
+		transition: 0.1s;
+		font-family: 'Nunito', sans-serif;
+	}
+
+	/* Changing link color on hover */
+	.hover:hover {
+		color: #48f539;
+	}
+
+	/* Setting font styles for class hover */
+	.hover{
+        font-style: normal;
+    }
+    .cart{
+        height: 40px;
+    }
+    /* background image */
+
+    .container img {
+        display: flex;
+        height: 400px;
+        width: 300px;
+    }
+
+    .firstpart {
+        display: flex;
+        margin: 18px 0px 254px 327px;
+    }
+    .member{
+        padding: 10px;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: rgb(40, 40, 41);
+        
+        
+    }
+    .secondpart img {
+        border-radius: 50%;
+        margin: 0px -42px 45px 185px;
+    }
+
+
+    /* hover on students images */
+
+    .secondpart :hover img {
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        transition: 0.5s;
+    }
+
+
+    /* display flex about student */
+
+    .secondpart .std {
+        display: flex;
+    }
+
+    .secondhalf {
+        margin: 94px 147px 0px 66px;
+    }
+
+    .secondhalf .Abtus {
+        font-weight: bolder;
+        font-size: 44px;
+    }
+
+    .secondhalf .text_Abt_us {
+        font-size: 18px;
+        font-family: Tahoma, sans-serif;
+        text-align: justify;
+    }
+
+    .secondpart .Aboutstudent {
+        margin: 80px 163px 0px 109px;
+    }
+
+
+    /* setting the height and width of the group member images */
+
+    .secondpart img {
+        height: 309px;
+        width: 500px;
+    }
+
+
+    /* bolding the name of the student  */
+
+    .secondpart b {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact-btn  {
+    background-color: #25A9E0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px 15px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto; 
+    }
+    .contact-btn:hover{
+        color: #48f539;
+    }
+    .symbol{
+        width: 40px;
+        margin: 20px auto 0;
+        border-radius: 20px;
+    }
+    .backtotop{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(223, 228, 213);
+    color: rgba(67, 89, 18, 1);
+    border-left: solid ;
+    border-right: solid;
+    border-color: black;
+    }
+    a:link { 
+    text-decoration: none; 
+    }
+    /*----------------------------------- Footer ----------------------------------*/
+    .footer{
+        margin-bottom: 1px;
+        padding: 60px 15%;
+        background: rgb(223, 228, 213);
+        color: rgba(67, 89, 18, 1);
+        display: flex;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .col-1 a{
+        display: block;
+        color: black;
+        font-size: larger;
+    }
+
+    .col-2{
+        flex-grow: 2;  
+
+    }
+    </style>
+</head>
+
+<body>
+    <header class="page1">
+        <!-- Navigation bar code -->
+      
+        <div class="nav0">
+          <nav>
+               <!-- Logo of the website -->
+                    <img src="../images/logo.png" class="logo1">
+                    
+              <div>
+                   <!-- Navigation Menu -->
+                    <ul>
+                        <li><a href="C:\Users\khalid hasan\OneDrive\Documents\is corsework/index.html" class="hover">Home</a></li>
+                        <li><a href="product.html" class="hover">Products</a></li>
+                        <li><a href="blog.html" class="hover">Blog</a></li>
+                        <li><a href="research.html" class="hover">Research</a></li>
+                        <li><a href="#" class="hover">About us</a></li>
+    
+                        <!-- Shopping Cart -->
+                        <li><a href="f form.html"><img src="../images/cart.png" class="cart"></a></li>  
+                    </ul>
+                    
+              </div>                  
+          </nav>
+        </div>
+
+
+    <!-- upper part of website -->
+
+    <div class="firstpart">
+        <div class="container">
+            <!-- first image -->
+            <img src="../images/logo.png" alt="this is an image">
+        </div>
+        <!-- about the store -->
+        <div class="secondhalf">
+            <div id="text">
+            <h1 class="Abtus" style="font-size: larger;">About us</h1><br>
+            <p class="text_Abt_us">
+                Bonsai plant store located in Kathmandu, Nepal would offer a wide variety of Bonsai plants, tools and accessories, and classes, it would be decorated in a traditional way to give visitors a serene and peaceful experience while they shop.The store would
+                be decorated in a very traditional way with wooden shelves, and the store would be designed to look like a traditional Japanese garden, with rock gardens, water features, and Japanese lanterns. The store would be a tranquil and peaceful
+                place to visit, where customers can take their time browsing the different Bonsai plants and accessories on offer.The store might also offer a variety of accessories and tools for Bonsai enthusiasts, such as pruning shears, wire, and fertilizers.
+                Additionally, the store could offer classes or workshops on Bonsai care and training, allowing customers to learn more about how to properly care for and shape their Bonsai plants.epal would likely offer a wide variety of Bonsai plants
+                for customers to choose from. The store could specialize in traditional Bonsai species, such as Juniper and Pine, as well as more exotic varieties like the Ficus and Chinese Elm. The store would likely have a wide range of sizes and styles
+                of Bonsai, catering to both beginners and experienced enthusiasts. </p><br><br><br>
+                 </div>
+                <button onclick="changeText()">See Store name</button>
+
+        </div>
+    </div>
+    <a href="ContactUs.html" class="contact-btn">Contact Us</a>
+<div class="member">
+    Our Team Members:
+</div>
+
+
+
+    <div class="secondpart">
+
+        <!-- details of the student and the link of their cv  -->
+        <!-- khalid  -->
+        <div class="std">
+            <img src="../images/khalid.jpg" alt="" onclick="window.location.href = 'khalid cv.html';">
+            <p class="Aboutstudent">
+
+                <b>Khalid Hasan Ansari</b> <br>  Bonsai Plant Nursery Manager:<br> Responsible for overseeing day-to-day operations of a bonsai plant nursery, including managing staff and supervising the cultivation, sale, and care of bonsai plants.
+
+            </p>
+
+
+
+        </div>
+
+        <!-- dilip shrestha -->
+        <div class="std">
+            <img src="../images/dilip.jpg" alt="" onclick="window.location.href = 'dilipcv.html';">
+            <p class="Aboutstudent">
+                <b>Dilip Shrestha</b> <br>Bonsai Plant Sales Associate:<br> Responsible for providing excellent customer service while assisting shoppers in selecting the right bonsai plants and related products.
+            </p>
+
+        </div>
+
+        <!-- sajiya khatoon -->
+
+        <div class="std">
+            <img src="../images/shajjiya.png" alt="" onclick="window.location.href = 'shajiycv.html';">
+            <p class="Aboutstudent">
+                <b>Shjiya Khatoon</b> <br>Bonsai Plant Care Specialist:<br> Responsible for providing expert advice and guidance on the care, maintenance, and handling of bonsai plants.
+            </p>
+        </div>
+
+        <!--  owaswi karmacharya -->
+        <div class="std">
+            <img src="../images/ojaswi.jpg" alt="" onclick="window.location.href = 'ojaswi cv.html';">
+            <p class="Aboutstudent">
+                <b>Ojaswi Karmacharya</b> <br> Bonsai Plant Merchandiser:<br> Responsible for arranging and displaying bonsai plants and related products in a visually appealing manner that increases sales.
+            </p>
+        </div>
+       <!--  animesh bhattarai -->
+        <div class="std">
+            <img src="../images/Animesh .jpg" alt="" onclick="window.location.href = 'animesh cv.html';">
+            <p class="Aboutstudent">
+                <b>Animesh Bhattarai</b> <br>Bonsai Plant Delivery Driver:<br> Responsible for safely and efficiently delivering bonsai plants and related products to customers.
+            </p>
+        </div>
+
+    </div>
+    <a href="#"><div class="backtotop">
+        Back to Top</div></a><hr>
+        <!----------------------------------Footer -------------------------------------------->
+        <div class="footer">
+          <div class="col-1">
+            <h3>USEFUL LINKS</h3><br>
+            <a href="../index.html">Home</a><br>
+            <a href="product.html">Product</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="research.html">Research</a><br>
+            <a href="#">About us</a><br>
+            <a href="ContactUs.html">Contact Us</a>
+          </div>
+  
+          <div class="col-2">
+            <h3>FIND US</h3><br>
+            <p>Kathmandu 44600,<br>Kamal Marg,<br>Nepal</p>
+  
+          </div>
+  
+          <div class="col-3">
+            <h3>FOR MORE INFO</h3>
+            <img src="../images/facebook.png" class="symbol">
+            <img src="../images/insta.jpg" class="symbol">
+            <img src="../images/snap.jpg" class="symbol">
+            <img src="../images/twitter.png" class="symbol">
+            <img src="../images/whatsapp.png" class="symbol">
+          </div>
+        </div>
+        >
+    </div>
+  <script>
+    function changeText() {
+        document.getElementById("text").innerHTML = "We Bonsai Store!";
+      }
+
+  </script>
+
+
+</body>
+
+</html>

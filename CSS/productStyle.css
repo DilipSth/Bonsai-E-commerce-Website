@@ -1,0 +1,216 @@
+
+.body{
+    margin: 0;
+ 
+}
+h2{
+    font-size: 38px;
+    color: rgb(121, 118, 118);
+}
+.page1{
+  margin-top: 70px;
+  height: 760px;
+}
+
+.nav0{
+  position: relative;
+  bottom: 70px;
+}
+/* navigation bar are displayed as flex */
+nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  box-shadow: rgb(0, 0, 0, 0.1);
+  z-index: 6;
+}
+
+/*  */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 40px 60px;
+  position: relative;
+  top: auto;
+  padding-top: 10px;
+  right: 200px;
+  z-index: 3;
+}
+
+/* Logo size are defined */
+.logo1{
+  width: 84px;
+  position: relative;
+  right: 200px;
+  bottom: 5px;
+}
+
+nav ul li a {
+  color: rgb(85, 75, 75);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.1s;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* making green color when we hover */
+.hover:hover {
+  color: #48f539;
+}
+.hover{
+  font-style: normal;
+}
+.about-plant{
+  font-size: larger;
+}
+ .intro {
+    font-size: 18px;
+  
+ } 
+.box-container {
+  display: flex; 
+  width: 100%;
+  background-color:  white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.box {
+  flex: 1; 
+  margin: 10px;
+  text-align: center;
+  background-color: #f4f6f4;
+  animation-name: box;
+  animation-duration: 25s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  
+ 
+}
+@keyframes box {
+  0%   {background-color: #f8f7f7;}
+  25%  {background-color: #f8f7f8;}
+  50%  {background-color: #f8f7f9;}
+  100% {background-color: #f8f7f6;}
+}
+
+.box img {
+  width: 100%;
+  
+}
+
+.cart{
+    height: 40px;
+}
+.location{
+    padding-top: auto;
+    color: rgb(121, 118, 118);
+    text-decoration: none;
+    display: inline-block;
+}
+.product-name{
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 10px;
+}
+.productDescription{
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font: 100;
+    color: black;
+    
+}
+.description{
+  background-color: whitesmoke;
+  animation-name: box;
+  animation-duration: 25s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  padding: 2px 2px;
+ 
+    
+      
+}
+.product-discount{
+  font-size: 19px;
+  font-weight: bolder;
+  color: #ed591a;
+  margin-top: 10px;
+}
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(156, 45, 45);
+      
+}
+.actual-price {
+  font-size: small;
+}
+.dilivery{
+  font-size: small;
+}
+.stock{
+  font-size: smaller;
+  color: #df4523;
+}
+.product-action{
+  background-color: #333333;
+	color: #FFFFFF;
+  width: 100%;
+  padding: 10px;
+}
+#more, #more1, #more2, #more3, #more4, #more5, #more6, #more7 {
+  display: none;
+}
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7 {
+  text-align: left;
+  cursor: pointer;
+}
+.backtotop{
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(223, 228, 213);
+  color: rgba(67, 89, 18, 1);
+  border-left: solid ;
+  border-right: solid;
+  border-color: black;
+}
+a:link { 
+  text-decoration: none; 
+}
+/*----------------------------------- Footer ----------------------------------*/
+.footer{
+	margin-bottom: 10px;
+	padding: 60px 15%;
+	background: rgb(223, 228, 213);
+    color: rgba(67, 89, 18, 1);
+	display: flex;
+}
+
+.footer div{
+	text-align: center;
+}
+
+.col-1 a{
+	display: block;
+	color: black;
+    font-size: larger;
+}
+
+.col-2{
+	flex-grow: 2;  
+
+}
+.symbol{
+	width: 40px;
+	margin: 20px auto 0;
+	border-radius: 20px;
+}

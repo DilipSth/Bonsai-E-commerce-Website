@@ -1,0 +1,362 @@
+<!-- This is a Contact Us page where user can send comments to the website owner. -->
+<!DOCTYPE html>
+<html>
+ <!-- Meta information about the page -->
+ <meta name="description" content="contact us html">
+ <meta name="keyword" content="semantic">
+ <meta name="author" content="Ojaswi">
+ <meta http-equiv="refresh" content="">
+<head>
+	<title>Contact us</title>
+	<style>
+*
+{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+.banner{
+
+	width: 100%;
+	height: 100vh;
+	background-image: url(../Images/bonsai.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+.page1{
+  margin-top: 70px;
+  height: 760px;
+}
+
+.nav0{
+  position: relative;
+  bottom: 70px;
+}
+/* navigation bar are displayed as flex */
+nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  box-shadow: rgb(0, 0, 0, 0.1);
+  z-index: 6;
+}
+
+/*  */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 40px 60px;
+  position: relative;
+  top: auto;
+  padding-top: 10px;
+  right: 200px;
+  z-index: 3;
+}
+
+/* Logo size are defined */
+.logo1{
+  width: 84px;
+  position: relative;
+  right: 200px;
+  bottom: 5px;
+}
+
+nav ul li a {
+  color: rgb(85, 75, 75);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.1s;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* making green color when we hover */
+.hover:hover {
+  color: #48f539;
+}
+.hover{
+  font-style: normal;
+}
+.cart{
+    height: 40px;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	transform: translate3d(-50%);
+	text-align: center;
+	color: #0f4d28;
+}
+
+.content h1{
+	font-size: 70px;
+	font-stretch: 100%;
+    
+	color: #c7ddb5;
+
+}
+.content p {
+	color: darkgrey;
+}
+form
+{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 39px 77px;
+	width: 90%;
+	max-width:6000px;
+	border-radius: 10px;
+	
+
+}
+
+form h3{
+	color: #4b6043;
+	font-weight: 800;
+	margin-bottom: 40px;
+    font-size: 200%;
+}
+
+form input, form textarea{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #f5f5f5;
+	font-size: 16px;
+
+}
+
+form button{
+	padding: 15px;
+	background: #4b6043;
+	color: black;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 20px;
+	transition: .4s ease;
+}
+
+form button:hover{
+	background-color: #c7ddb5;
+}
+.symbol{
+	width: 40px;
+	margin: 20px auto 0;
+	border-radius: 20px;
+}
+a:link { 
+    text-decoration: none; 
+  }
+.contactinfo h2{
+	padding: 15px;
+	background: #c7ddb5;
+	color: black;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 300px;
+	height: 200px;
+	border-radius: 20px;
+	transition: .4s ease;
+	
+}
+
+.contactinfo h2:hover{
+	background-color: #4b6043;
+}
+.contactinfo .box{
+	padding: 100px;
+	box-sizing: border-box;
+    float: left;
+   width: 25%;
+   
+
+}
+
+.footer{
+	margin-bottom: 15px;
+	padding: 100px 15%;
+	background: rgb(223, 228, 213);
+        color: rgba(67, 89, 18, 1);
+	display: flex;
+}
+
+.footer div{
+	text-align: center;
+}
+
+.col-1 a{
+	display: block;
+	color: black;
+}
+
+.col-2{
+	flex-grow: 2;  
+
+}
+	</style>
+
+</head>
+
+<body>
+	<div class="banner">
+		<header class="page1">
+			<!-- Navigation bar code -->
+		  
+			<div class="nav0">
+			  <nav>
+				   <!-- Logo of the website -->
+						<img src="../images/logo.png" class="logo1">
+						
+				  <div>
+					   <!-- Navigation Menu -->
+						<ul>
+							<li><a href="../index.html" class="hover">Home</a></li>
+							<li><a href="product.html" class="hover">Products</a></li>
+							<li><a href="blog.html" class="hover">Blog</a></li>
+							<li><a href="research.html" class="hover">Research</a></li>
+							<li><a href="aboutus.html" class="hover">About us</a></li>
+		
+							<!-- Shopping Cart -->
+							<li><a href="f form.html"><img src="../images/cart.png" class="cart"></a></li>  
+						</ul>
+						
+				  </div>                  
+			  </nav>
+			</div>	
+
+	<!-- this is heading of contactus page.-->
+	<div class="content">
+		<h1>CONTACT US</h1>
+		<p> Any queries or feedback? Just write us a message to contact our team! </p>
+
+
+		<div class="contactinfo">
+
+			<div class="box">
+				<div class="icon"></div>
+				<div class="text">
+					<h2><img src="../Images/map.jpg" class="symbol"><br>OUR MAIN OFFICE<br><br>
+						<p>Kathmandu 44600,<br>Kamal Marg,<br>Nepal</p></h2>
+					</div>
+		        </div>
+
+
+
+
+				<div class="box">
+					<div class="icon"></div>
+						<div class="text">
+							<h2><img src="../Images/mail.jpg" class="symbol"><br>EMAIL<br><br>
+								<p>info@webonsai.com</p></h2>
+						</div>
+				</div>
+
+
+						<div class="box">
+							<div class="icon"></div>
+							<div class="text">
+								<h2><img src="../Images/phone-icon.png" class="symbol"><br>CONTACT NO.<br><br>
+									<p>01-5970012</p></h2>
+								</div>
+						</div>
+
+                        
+			</div>		
+			</div>	
+			</div>	
+        </div>
+
+		
+
+			<body>
+			
+				<div class="container">
+					<!-- this is contact form.-->
+					<form>
+
+						<h3>GET IN TOUCH</h3>
+						<input type="text" id="name" placeholder="Your Name" class="form-fields" required>
+
+						<input type="email" id="email" placeholder="Email ID" class="form-fields" required>
+
+						<input type="text" id="phone" placeholder="Phone no." class="form-fields" required>
+
+						<textarea id="message" rows="4" placeholder="Any message or feedback?" class="form-field"></textarea>
+
+						<button type="submit" value="Submit" class="submit-btn">Submit </button>
+
+
+					</form>
+				</div>
+
+
+<!-- this is the footer section.-->
+			<body>
+				<div class="footer">
+					<div class="col-1">
+						<h3>USEFUL LINKS</h3>
+						<a href="../index.html">Home</a><br>
+						<a href="product.html">Product</a><br>
+						<a href="blog.html">Blog</a><br>
+						<a href="research.html">Research</a><br>
+						<a href="aboutus.html">About us</a><br>
+						<a href="ContactUs.html">Contact Us</a>
+					</div>
+
+					<div class="col-2">
+						<h3>FIND US</h3>
+						<p>Kathmandu 44600,<br>Kamal Marg,<br>Nepal</p>
+
+					</div>
+
+					<div class="col-3">
+						<h3>FOR MORE INFO</h3>
+						<img src="../Images/facebook.png" class="symbol">
+						<img src="../Images/insta.jpg" class="symbol">
+						<img src="../Images/snap.jpg" class="symbol">
+						<img src="../Images/twitter.png" class="symbol">
+						<img src="../Images/whatsapp.png" class="symbol">
+					</div>
+				</div>
+				
+
+			</body>
+<!-- this is the script that checks whether user has filled all the fields or not.-->
+<script>
+	document.querySelector(".submit-btn").addEventListener("click", function(){
+	 var formFields = document.querySelectorAll(".form-field");
+	 var isFormValid = true;
+ 
+	 for (var i = 0; i < formFields.length; i++) {
+		 if (formFields[i].value === "") {
+			 isFormValid = false;
+			 alert("Please fill all the form fields!");
+			 break;
+		 }
+	 }
+ 
+	 if (isFormValid) {
+		 alert("Thank You For Your Feedback!");
+	 }
+ });
+ </script>
+			
+
+			</html>

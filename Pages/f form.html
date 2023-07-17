@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- Meta information about the page -->
+     <meta name="description" content="functional form html">
+  <meta name="keyword" content="semantic">
+  <meta name="author" content="ojaswi">
+  <meta http-equiv="refresh" content="">
+ 
+  <!-- Styles for form container, form rows, form labels and fields, submit button, and hover effect -->
+    <style>
+      body{
+        background-image: url("../Images/leaf1.png");
+        
+      }
+      .form-container {
+        width: 65%;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin: auto;
+      }
+
+      .form-row {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .form-label {
+        width: 20%;
+        padding: 8px;
+        text-align: right;
+      }
+
+      .form-field {
+        width: 80%;
+        padding: 8px;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #4CAF50;
+        color: white;
+        margin-top: 10px;
+      }
+
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Form container with form elements -->
+    <div class="form-container">
+      <form>
+         <!-- Form row for name input field -->
+        <div class="form-row">
+          <label class="form-label">Name: </label>
+          <input type="text" class="form-field" name="name" placeholder="Enter your name" required>
+        </div>
+        <!-- Form row for contact input field -->
+        <div class="form-row">
+          <label class="form-label">Contact: </label>
+          <input type="text" class="form-field" name="contact" placeholder="Enter your contact" required>
+        </div>
+        <!-- Form row for address input field -->
+        <div class="form-row">
+          <label class="form-label">Address: </label>
+          <input type="text" class="form-field" name="address" placeholder="Enter your address" required>
+        </div>
+           <!-- Form row for bonsai type select field -->
+        <div class="form-row">
+          <label class="form-label">Bonsai Plant Type: </label>
+          <select class="form-field" name="bonsai_type" required>
+            <option value="ficus" id="plant">Golden Gate Ficus</option>
+            <option value="juniper">Chinese Elm</option>
+            <option value="pomegranate">Pomegranate Bonsai</option>
+            <option value="ficus">Rock Juniper</option>
+            <option value="elm">Boxwood</option>
+            <option value="boxwood">Taiwan Ficus</option>
+            <option value="maple">Satsuki Azalea - Pink Blossom</option>
+            <option value="azalea">Sago Palm</option>
+          </select> 
+        </div>
+           <!-- Form row for bonsai quantity select field -->
+        <div class="form-row">
+          <label class="form-label">Quantity: </label>
+          <input type="number" class="form-field" name="quantity" min="1" max="20" required>
+        </div>
+        <input type="submit" value="Order" class="submit-btn">
+      </form>
+    </div>
+    <!--Javascript to check whether form is valid or not-->
+    <script>
+   document.querySelector(".submit-btn").addEventListener("click", function(){
+    var formFields = document.querySelectorAll(".form-field");
+    var isFormValid = true;
+
+    for (var i = 0; i < formFields.length; i++) {
+        if (formFields[i].value === "") {
+            isFormValid = false;
+            alert("Please fill all the form fields!");
+            break;
+        }
+    }
+
+    if (isFormValid) {
+        alert("Order is Placed!");
+    }
+});
+
+
+
+    </script>
+  </body>
+</html>
